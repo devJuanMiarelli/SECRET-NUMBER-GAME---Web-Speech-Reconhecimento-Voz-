@@ -1,0 +1,90 @@
+/* by: Juan Miarelli */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --fonte: 'Poppins', sans-serif;
+    --primary-color: #040D12;
+    --bg-color: #5C8374;
+    --game-over-color: #8C3333;
+    --white: #FAF3F0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    flex-direction: column;
+
+    margin: 0;
+
+    font-family: var(--fonte);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 16px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box {
+    border: solid 2px #040D12;
+    display: inline-block;
+
+    font-size: 4em;
+
+    padding: 10px;
+    margin: 20px;
+}
+
+.btn-jogar {
+    padding: 8px 15px; 
+    margin-top: 20px;
+    border: solid 2px var(--primary-color);
+    border-radius: 5px;
+    
+    background: var(--bg-color);
+    
+    font-size: .9em;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-jogar-game-over {
+    padding: 8px 15px; 
+    margin-top: 20px;
+    border: solid 2px var(--white);
+    border-radius: 5px;
+    
+    background: var(--game-over-color);
+    color: var(--white);
+    
+    font-size: 1.1em;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.nao-diga {
+    font-weight: bold;
+
+    color: var(--game-over-color);
+}
